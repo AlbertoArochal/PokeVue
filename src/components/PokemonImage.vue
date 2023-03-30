@@ -50,6 +50,6 @@ img {
     -webkit-user-select: none;
 }
 .hidden-pokemon {
-    filter: brightness(0);
+    filter: brightness(0.1);
 }
 </style>
