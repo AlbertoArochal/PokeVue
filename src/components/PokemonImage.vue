@@ -2,7 +2,7 @@
     <div class="pokemon-container">
         <img class="fade-in" :src="imgSrc" alt="pokemon picture" />
         <img
-            v-if="showPokemon"
+            v-if="!showPokemon"
             class="hidden-pokemon"
             :src="imgSrc"
             alt="bulbasaur picture"
@@ -50,6 +50,6 @@ img {
     -webkit-user-select: none;
 }
 .hidden-pokemon {
-    filter: brightness(0.1);
+    filter: brightness(0);
 }
 </style>

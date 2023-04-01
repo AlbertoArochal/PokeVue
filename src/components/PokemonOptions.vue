@@ -1,8 +1,12 @@
 <template>
     <div class="options-container">
         <ul>
-            <li v-for="pokemon in pokemons" :key="pokemon.id">
-                {{ pokemon.name }}
+            <li
+                v-for="pokemon in pokemons"
+                :key="pokemon.id"
+                @click="$emit('selection', pokemon.id)"
+            >
+                {{ pokemon.name.toUpperCase() }}
             </li>
         </ul>
     </div>
@@ -36,7 +40,7 @@ li {
 }
 
 li:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 251, 113, 0.05);
 }
 
 .options-container {
